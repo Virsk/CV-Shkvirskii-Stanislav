@@ -1,0 +1,6 @@
+@CV_Shkvirskii_Stanislav.Server_HostAddress = http://localhost:5181
+
+GET {{CV_Shkvirskii_Stanislav.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

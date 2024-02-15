@@ -1,0 +1,78 @@
+.header-main {
+  display: flex;
+  min-width: 960px;
+  margin-top: 23px;
+  gap: 40px;
+
+  .heder-photo {
+    width: 350px;
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+    }
+  }
+
+  .heder-content {
+    width: 100%;
+
+    h1 {
+      color: #B4B2B3;
+      font-family: Roboto;
+      font-size: 75px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .heder-content-post {
+      color: #D1D1D1;
+      font-family: Roboto;
+      font-size: 36px;
+      font-weight: 500;
+      padding-bottom:16px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #3A3A3A;
+    }
+  }
+
+  .header-contact-info {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 20px 0 10px 0;
+  }
+
+  .header-contact-block {
+    display: flex;
+    gap: 21px;
+
+    img {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .header-contact-title,
+    .header-contact-value {
+      transition: none;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    .header-contact-title {
+      color: #B9B9B9;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .header-contact-value {
+      color: #E8E8E8;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 4px;
+    }
+  }
+}

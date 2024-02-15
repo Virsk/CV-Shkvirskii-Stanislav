@@ -1,0 +1,36 @@
+.change-theme-button-main {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+
+  .change-theme-button-lable {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    z-index: 1;
+    font-weight: 600;
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none;
+    display: flex;
+    padding: 2px;
+    width: 60px;
+    align-items: center;
+    border-radius: 60px;
+    background: #FFFFFF;
+    pointer-events: none;
+
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #07170a;
+    }
+  }
+}

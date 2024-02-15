@@ -1,0 +1,40 @@
+<div class="about-me-main">
+
+  <div class="about-me-info" *ngFor="let content of AllContent content">
+    
+    <div class="about-me-title">
+
+      <p>{{content.title}}</p>
+
+    </div>
+
+    <div class="about-me-content">
+
+      <div class="about-me-title-years" >
+
+        <ng-container *ngFor="let appellation of content.appellations">
+          <p class="date">
+            {{appellation.date}}
+          </p>
+          <p class="text">
+            {{appellation.appellation}}
+          </p>
+        </ng-container>
+          
+      </div>
+
+      <div class="about-me-description" >
+        <ng-container *ngFor="let description of content.descriptions">
+          <p>
+            {{description}}
+          </p>
+        </ng-container>
+      </div>
+
+    </div>
+
+  </div>
+  <app-hard-skills></app-hard-skills>
+  <app-interest></app-interest>
+
+</div>

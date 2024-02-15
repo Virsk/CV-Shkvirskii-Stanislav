@@ -1,0 +1,13 @@
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 37px 120px 88px 120px;
+  background: #07170a;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

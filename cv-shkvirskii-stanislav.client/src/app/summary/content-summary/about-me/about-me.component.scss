@@ -1,0 +1,91 @@
+.about-me-main {
+  margin-top: 60px;
+
+
+  .about-me-info {
+    display: flex;
+    width: 960px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+    .about-me-title {
+      border-bottom: 3px solid #606060;
+      padding-bottom: 16px;
+      height: fit-content;
+
+      p {
+        color: #D1D1D1;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+
+    .about-me-content {
+      position: relative;
+      display: flex;
+      gap: 36px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #3A3A3A;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #07170a);
+      }
+
+      .about-me-title-years {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 5px;
+
+
+        .date {
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+
+        .text {
+          width: 157px;
+          color: #D1D1D1;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 400;
+          border-bottom: 1px solid #3A3A3A;
+        }
+      }
+
+      .about-me-description {
+        display: flex;
+        flex-direction: column;
+        max-height: 260px;
+        overflow-y: auto;
+        gap: 16px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        p {
+          width: 480px;
+          color: #B9B9B9;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
