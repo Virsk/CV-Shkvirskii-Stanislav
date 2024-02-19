@@ -1,0 +1,28 @@
+<div class="change-theme-lang-main">
+
+
+  <div class="change-lang">
+    <img src="../../../assets/icon/change-theme-lang/language-white.svg" />
+
+    <button (click)="switchLanguage('en')">
+      <p>en</p>
+    </button>
+
+    <button (click)="switchLanguage('uk')">
+      <p>uk</p>
+    </button>
+
+    <button (click)="switchLanguage('ru')">
+      <p>ru</p>
+    </button>
+  </div>
+  
+
+  <div class="change-theme">
+    <label class="change-theme-lable">{{"Dark/Light" | translate}}</label>
+    <div class="change-theme-input" (click)="checkProgress()">
+      <input type="range" [(ngModel)]="progressValue" min="0" max="100" />
+    </div>
+  </div>
+
+</div>

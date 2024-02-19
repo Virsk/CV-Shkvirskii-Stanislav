@@ -1,57 +1,83 @@
 ﻿using CV_Shkvirskii_Stanislav.Server.models;
+using System.Diagnostics;
+using System.Reflection.PortableExecutable;
 
 namespace CV_Shkvirskii_Stanislav.Server
 {
     public static class DateBaseMoq
     {
         static List<ContentModel> content;
+        static List<SkillModel> skills;
+        
         static DateBaseMoq()
         {
             content = new List<ContentModel>()
-{
-    new ContentModel(
-        [new AppellationModel("23. 12. 1989", "Шквiрський Станiслав Анатолiйович")],
-        "About Me",
-        new string[]
-        {
-            "Мене звуть Станислав, і я працюю full stack-розробником з більш, ніж дворічним досвідом роботи в галузі розробки.",
-            "Мої навички включають роботу з HTML, CSS, SCSS, JavaScript, TypeScript, C# а також з фреймворками, такими як Angular, Vue.js, ASP.NET, Blazor.",
-            "Маю також досвiд: мобiльна розробка Maui+Blazor, API: Google, Firebase, Бібліотеки SignalR, RXjs",
-            "Мені подобається вчитися новому, досліджувати технологічні інновації та дізнаватися про найкращі практики в галузі розробки.",
-            "Я відкритий до спілкування та готовий до успішної співпраці з командою розробників для досягнення спільних цілей.",
-            "Я ставлю перед собою високі стандарти роботи та прагну до постійного удосконалення своїх навичок, щоб стати кращим у своїй професії."
-        }),
+            {
+                new ContentModel(
+                    [new AppellationModel("23. 12. 1989", "Shkvirskii Stanislav")],
+                    "About Me",
+                    new string[]
+                    {
+                        "My name is Stanislav, and I work as a full stack developer with more than two years of experience in the field of development.",
+                        "I have confident skills in web development using C#, HTML, CSS, SCSS, JavaScript and TypeScript. Experience with Angular, Vue.js, ASP.NET and Blazor. I also have the skills to use SignalR to develop applications in real time.",
+                        "I have experience in using MAUI Blazor, capable of creating mobile applications using technologies from Microsoft, as well as experience with APIs from Google and Firebase.",
+                        "I like learning new things, researching technological innovation and learning about best practices in development.",
+                        "I am open to communication and ready to collaborate successfully with the development team to achieve common goals.",
+                        "I set myself high work standards and am committed to continually improving my skills to become the best in my profession."
+                    }),
 
-    new ContentModel(
-        [new AppellationModel("29. 02. 2024", "Full Stack Developer")],
-        "Experience",
-        new string[]
-        {
-            "Протягом останiх двох рокiв я успішно працював в компанії 'Xanel' в якості Full Stack Developer, вдосконалював свої навички та накопичував досвід у технологіях, необхідних для успішної роботи Full Stack Developer.",
-            "Моя робота включала в себе не лише реалізацію веб-додатків, а й їх подальше вдосконалення та оптимізацію. Я був активно задіяний у забезпеченні ефективної взаємодії між фронтендом та бекендом, розробляючи та вдосконалюючи функціонал відповідно до вимог та очікувань користувачів.",
-            "Моя робота часто вимагала вміння працювати від ідеї до релізу, включаючи усі етапи розробки від проектування до тестування та впровадження. Завжди надавав пріоритет високій якості та ефективності коду, впевнений, що чистий та оптимізований код є ключовим елементом успішної розробки.",
-            "Моє завдання полягало в пошуку та впровадженні оптимальних рішень для досягнення найкращих результатів.",
-            "Загалом, моя робота в сфері Full Stack Development була невід'ємною частиною мого професійного зростання, дозволяючи мені не лише реалізовувати вимоги проектів, а й вносити власний вклад у розвиток та вдосконалення веб-технологій."
-        }),
+                new ContentModel(
+                    [new AppellationModel("29. 02. 2024", "Full stack developer")],
+                    "Experience",
+                    new string[]
+                    {
+                        "For the last two years, I have successfully worked in the organization of 'Xanel' as a Full Stack Developer, improved my skills and accumulated experience in the technologies necessary for the successful work of a full stack developer.",
+                        "My work included not only the implementation of web applications, but also their further improvement and optimization. I was actively involved in ensuring effective interaction between the frontend and backend, developing and improving the functionality in accordance with the requirements and expectations of users.",
+                        "My work often required the ability to work from idea to release, including all stages of development from design to testing and implementation. Always prioritized high quality and efficiency of code, confident that clean and optimized code is a key element of successful development.",
+                        "My task was to find and implement optimal solutions for achieving the best results.",
+                        "In general, my work in the field of Full Stack Development has been an integral part of my professional growth, allowing me not only to fulfill the requirements of projects, but also to make my own contribution to the development and improvement of web technologies."
+                    }),
 
-    new ContentModel(
-        [new AppellationModel("20. 01. 2022", "ITVDN , '.NET Developer'"),
-        new AppellationModel("07. 03. 2023", "Курси англійської ESL"),
-        new AppellationModel("01. 07. 2013", "ДДГУ, 'Процесси машини та обладнання '")],
-        "Education",
-        new string[]
-        {
-            "Курс .NET Developer дав мені можливість отримати практичний досвід у розробці веб-сайтів та додатків з нуля та на базі готових рішень. Я здобув великий досвід у виконанні завдань та проектів, працюючи як самостійно, так і в команді. Я готовий внести свій внесок у розробку високоякісних веб-додатків та продуктів.",
-            "Курс англійської мови на рівні Pre-Intermediate надав навичок для впевненого спілкування. Розвивав розуміння мови та покращував навички читання, письма, розмови та слухання.",
-            "Після успішного завершення навчання на факультеті 'Процеси машини та обладнання' Дніпропетровського державного університету, я отримав високоякісну освіту та значні фахові навички в галузі машинобудування та обладнання. Моя освіта дала глибокі знання і підготувала мене до викликів, пов'язаних із технічними інноваціями та інженерною діяльністю. Моє логічне мислення, розвинуте під час навчання, виявляється великою перевагою у моїй роботі програміста."
-        })
-};
+                new ContentModel(
+                    [new AppellationModel("20. 01. 2022", "ITVDN , '.NET Developer'"),
+                    new AppellationModel("07. 03. 2023", "English language courses"),
+                    new AppellationModel("01. 07. 2013", "DSAEU, 'Processes machines and equipment'")],
+                    "Education",
+                    new string[]
+                    {
+                        "The .NET Developer course gave me the opportunity to gain practical experience in developing websites and applications from scratch and based on ready-made solutions. I gained a lot of experience in performing tasks and projects, working both independently and in a team. I am ready to contribute to the development of high-quality web applications and products.",
+                        "The Pre-Intermediate English course provided skills for confident communication. Developed language comprehension and improved reading, writing, speaking and listening skills.",
+                        "After successfully completing my studies at the Faculty 'Processes of Machinery and Equipment' of Dnipropetrovsk State University, I received a high-quality education and significant professional skills in the field of mechanical engineering and equipment. My education provided deep knowledge and prepared me for the challenges associated with technical innovation and engineering. My logical thinking, developed during my studies, turns out to be a great advantage in my work as a programmer."
+                    })
+            };
 
+            skills = new List<SkillModel>()
+            {
+                new SkillModel{ Title = "HTML", Lvl = 75 },
+                new SkillModel{ Title = "Angular", Lvl = 85 },
+                new SkillModel{ Title = "CSS", Lvl = 75 },
+               new SkillModel{ Title = "Blazor", Lvl = 90 },
+                new SkillModel{ Title = "SCSS", Lvl = 75 },
+                new SkillModel{ Title = "ASP.NET", Lvl = 80 },
+                new SkillModel{ Title = "JavaScript", Lvl = 80 },
+                new SkillModel{ Title = "SignalR", Lvl = 75 },
+                new SkillModel{ Title = "TypeScript", Lvl = 85 },
+                new SkillModel{ Title = "MAUI Blazor", Lvl = 80 },
+                new SkillModel{ Title = "C#", Lvl = 90 },
+                new SkillModel{ Title = "Vue.js", Lvl = 50 },
+                new SkillModel{ Title = "Web API", Lvl = 70 },
+                new SkillModel{ Title = "Rest API", Lvl = 70 },
+            };
         }
 
         public static List<ContentModel> GetContent()
         {
             return content;
+        }
+
+        public static List<SkillModel> GetSkills()
+        {
+            return skills;
         }
     }
 }

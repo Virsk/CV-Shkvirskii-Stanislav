@@ -1,1 +1,23 @@
-<p>interest works!</p>
+<div class="interes-info">
+
+  <div class="interes-title">
+
+    <p>
+      {{"Interest"  | translate}}
+    </p>
+
+  </div>
+
+  <div class="interes-container">
+
+    <div class="interes-content" *ngFor="let interes of interests">
+      <div class="interes-circle">
+        <img src={{interes.appellation}} />
+      </div>
+      <p>{{interes.date | translate}}</p>
+     
+    </div>
+
+  </div>
+
+</div>

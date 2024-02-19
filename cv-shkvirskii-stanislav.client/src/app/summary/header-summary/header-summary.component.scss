@@ -1,8 +1,7 @@
 .header-main {
   display: flex;
-  min-width: 960px;
-  margin-top: 23px;
-  gap: 40px;
+  margin: 23px 0 60px 0;
+  gap: 50px;
 
   .heder-photo {
     width: 350px;
@@ -14,23 +13,22 @@
   }
 
   .heder-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+
 
     h1 {
       color: #B4B2B3;
       font-family: Roboto;
-      font-size: 75px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      font-size: 66px;
     }
 
     .heder-content-post {
       color: #D1D1D1;
       font-family: Roboto;
       font-size: 36px;
-      font-weight: 500;
-      padding-bottom:16px;
       text-transform: uppercase;
       border-bottom: 2px solid #3A3A3A;
     }
@@ -38,14 +36,14 @@
 
   .header-contact-info {
     display: flex;
-    align-items: center;
-    gap: 26px;
-    padding: 20px 0 10px 0;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 20px 0 0;
   }
 
   .header-contact-block {
     display: flex;
-    gap: 21px;
+    gap: 15px;
 
     img {
       transition: transform 0.2s ease-in-out;

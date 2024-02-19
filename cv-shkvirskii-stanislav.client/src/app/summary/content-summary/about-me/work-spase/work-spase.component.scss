@@ -1,0 +1,40 @@
+.work-spase-info {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+
+  .work-spase-title {
+    border-bottom: 3px solid #606060;
+    padding-bottom: 16px;
+    height: fit-content;
+
+    p {
+      color: #D1D1D1;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .work-spase-container {
+    display: flex;
+    width: 760px;
+    padding-left: 13px;
+    justify-content: space-between;
+
+    .work-spase-content {
+      display: flex;
+      width: 210px;
+      align-items: center;
+      gap: 16px;
+    }
+
+    p {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

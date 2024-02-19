@@ -13,5 +13,12 @@ namespace CV_Shkvirskii_Stanislav.Server.Controllers
         {
             return DateBaseMoq.GetContent();
         }
+
+        [HttpGet]
+        [Route("GetSkills")]
+        public IEnumerable<SkillModel> GetSkills()
+        {
+            return DateBaseMoq.GetSkills();
+        }
     }
 }

@@ -1,0 +1,27 @@
+:host {
+  width: 100%;
+  padding-right: 53px;
+  margin-bottom: 30px;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid rgb(255, 255, 255, 0.03);
+    border-radius: 10px;
+    transition: border 0.3s;
+
+    &:hover {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #07170a;
+
+    &:hover {
+      background: rgb(255, 255, 255, 0.1);
+    }
+  }
+}

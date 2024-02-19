@@ -1,10 +1,7 @@
 .about-me-main {
-  margin-top: 60px;
-
-
+    width:1062px;
   .about-me-info {
     display: flex;
-    width: 960px;
     margin-bottom: 10px;
     justify-content: space-between;
 
@@ -42,7 +39,6 @@
       .about-me-title-years {
         display: flex;
         flex-direction: column;
-        height: fit-content;
         gap: 5px;
 
 
@@ -72,13 +68,32 @@
         max-height: 260px;
         overflow-y: auto;
         gap: 16px;
+        padding-right: 5px;
+        overflow-x: hidden;
 
         &::-webkit-scrollbar {
-          display: none;
+          width: 6px;
+          border: 1px solid rgb(255, 255, 255, 0.03);
+          border-radius: 10px;
+          transition: border 0.3s;
+
+          &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+          }
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgb(255, 255, 255, 0.05);
+          border-radius: 10px;
+          border: 1px solid #07170a;
+
+          &:hover {
+            background: rgb(255, 255, 255, 0.1);
+          }
         }
 
         p {
-          width: 480px;
+          width: 557px;
           color: #B9B9B9;
           font-family: Montserrat;
           font-size: 16px;

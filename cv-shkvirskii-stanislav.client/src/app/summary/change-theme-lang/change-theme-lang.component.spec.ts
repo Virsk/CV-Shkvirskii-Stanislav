@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChangeThemeButtonComponent } from './change-theme-button.component';
+import { ChangeThemeLangComponent  } from './change-theme-lang.component';
 
 describe('ChangeThemeButtonComponent', () => {
-  let component: ChangeThemeButtonComponent;
-  let fixture: ComponentFixture<ChangeThemeButtonComponent>;
+  let component: ChangeThemeLangComponent ;
+  let fixture: ComponentFixture<ChangeThemeLangComponent >;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ChangeThemeButtonComponent]
+      declarations: [ChangeThemeLangComponent ]
     });
-    fixture = TestBed.createComponent(ChangeThemeButtonComponent);
+    fixture = TestBed.createComponent(ChangeThemeLangComponent );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
